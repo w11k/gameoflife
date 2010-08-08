@@ -7,4 +7,9 @@
  */
 package com.weiglewilczek.gameoflife
 
-class Cell
+case class Cell(x: Int, y: Int) {
+
+  override def toString = position
+
+  private lazy val position = "(%s, %s)".format(x, y)
+}
