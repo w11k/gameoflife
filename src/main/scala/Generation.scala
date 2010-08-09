@@ -9,4 +9,10 @@ package com.weiglewilczek.gameoflife
 
 class Generation(val aliveCells: Set[Cell] = Set.empty) {
   require(aliveCells != null, "aliveCells must not be null!")
+
+  private def aliveNeighbours(cell: Cell) =
+    cell.neighbours filter aliveCells.contains
+
+  private def deadNeighbours(cell: Cell) =
+    cell.neighbours filter { neighbour => !(aliveCells contains neighbour) }
 }
