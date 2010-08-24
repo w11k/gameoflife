@@ -1,0 +1,9 @@
+p=. !http://github.com/downloads/weiglewilczek/gameoflife/scala-tutorial-octagon.gif!
+
+This repository contains the example for the "Scala":http://www.scala-lang.org tutorial published in the second issue of the "JAXmag":http://jaxenter.com/jaxmag. The example is an idiomatic and simple implementation of the fantastic "Game of Life":http://en.wikipedia.org/wiki/Conway's_Game_of_Life. If you haven't heard about this interesting biological simulation, you really should take a look.
+
+Currently our Game of Life is built on Scala 2.8 and build with "SBT":http://code.google.com/p/simple-build-tool. The Swing GUI is implemented using the Scala Swing library. In order to run it, simply clone the repository, start SBT and execute _run_. If you give an _Int_ parameter you can modify the dimension of the playing field, the default is _25_.
+
+We are certainly hoping to get some feedback, questions, bug-reports (please use the issue tracker) or ideas on how to improve our tutorial.
+
+bnd4sbt is open source software licensed under the "Eclipse Public License v1.0":http://www.eclipse.org/legal/epl-v10.html. Just use it!
